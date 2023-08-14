@@ -9,7 +9,7 @@ struct PieceType {
 
     constexpr PieceType(Type type);
 
-    constexpr int to_number() const;
+    constexpr int to_index() const;
 
     constexpr operator Type() const;
     explicit operator bool() const = delete;

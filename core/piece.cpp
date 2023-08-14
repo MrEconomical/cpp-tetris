@@ -5,10 +5,10 @@
 
 constexpr PieceType::PieceType(Type type): type{type} {}
 
-// Convert underlying variant to number
+// Convert underlying variant to index number
 
-constexpr int PieceType::to_number() const {
-    return static_cast<int>(type);
+constexpr int PieceType::to_index() const {
+    return static_cast<int>(type) - 1;
 }
 
 // Allow conversion to underlying Type enum
