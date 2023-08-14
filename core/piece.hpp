@@ -1,10 +1,10 @@
 #pragma once
 
-// Piece type enum struct
+// Tetris piece type enum struct
 
 struct PieceType {
     enum Type: int {
-        Z, L, O, S, I, J, T,
+        Z = 1, L, O, S, I, J, T,
     };
 
     constexpr PieceType(Type type);
@@ -18,7 +18,7 @@ private:
     Type type;
 };
 
-// Piece position struct
+// Piece position on board struct
 
 struct Position {
     int row;
@@ -30,4 +30,5 @@ struct Position {
 struct Piece {
     PieceType type;
     Position pos;
+    int rotation;
 };

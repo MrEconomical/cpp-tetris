@@ -3,6 +3,6 @@
 // Tetris configuration
 
 namespace config {
-    inline constexpr unsigned width = 10;
-    inline constexpr unsigned height = 20;
+    inline constexpr unsigned WIDTH = 10;
+    inline constexpr unsigned HEIGHT = 20;
 }

@@ -1,3 +1,4 @@
+#include "piece_states.hpp"
 #include "piece.hpp"
 
 // PieceType constructor with enum variant
