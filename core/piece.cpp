@@ -1,5 +1,6 @@
-#include "piece_states.hpp"
 #include "piece.hpp"
+
+using namespace piece;
 
 // PieceType constructor with enum variant
 

@@ -1,6 +1,6 @@
-#include "config.hpp"
-#include "tetris.hpp"
+#include "lib.hpp"
 
+using namespace core;
 using config::WIDTH, config::HEIGHT;
 
 // Set board to empty on construction

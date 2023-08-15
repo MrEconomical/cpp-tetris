@@ -1,5 +1,7 @@
-#include "../core/tetris.hpp"
+#include "core/lib.hpp"
 #include <iostream>
+
+using core::Tetris;
 
 int main() {
     Tetris tetris;
