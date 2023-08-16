@@ -13,7 +13,7 @@ namespace piece {
             Z = 1, L, O, S, I, J, T,
         };
 
-        constexpr PieceType(Type type);
+        constexpr PieceType(Type enum_type);
 
         constexpr int to_index() const;
 
@@ -21,7 +21,7 @@ namespace piece {
         explicit operator bool() const = delete;
 
     private:
-        Type type;
+        Type enum_type;
     };
 
     // Piece position on board struct
@@ -34,7 +34,7 @@ namespace piece {
     // Piece struct
 
     struct Piece {
-        PieceType type;
+        PieceType piece_type;
         Position pos;
         int rotation;
         PieceState& state;

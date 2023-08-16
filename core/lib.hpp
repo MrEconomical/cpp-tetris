@@ -3,6 +3,7 @@
 namespace core {
     #include "config.hpp"
     #include "piece.hpp"
+    #include "rng.hpp"
 
     // Tetris game class
 
