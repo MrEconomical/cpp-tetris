@@ -14,7 +14,7 @@ namespace rng {
         long long state;
     
     public:
-        PRNG(long long seed);
+        constexpr PRNG(long long seed);
 
         void shufflePieces(int (&arr)[config::NUM_PIECES]);
     

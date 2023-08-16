@@ -1,16 +1,13 @@
 #include "rng.hpp"
-#include <stdexcept>
+#include <cassert>
 
 using namespace rng;
 using config::NUM_PIECES;
 
 // Initialize PRNG with seed
 
-PRNG::PRNG(long long seed) {
-    if (seed == 0) {
-        throw std::invalid_argument("seed cannot be zero");
-    }
-    state = seed % M;
+constexpr PRNG::PRNG(long long seed): state{seed % M} {
+    assert(seed != 0); // A zero seed only generates zeroes
 }
 
 // Generate next number in LCG sequence
